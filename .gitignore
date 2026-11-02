@@ -1,0 +1,5 @@
+# original photos carry GPS; only graded copies in assets/img/photos go online
+images/
+*.jpg
+*.jpeg
+*.heic
