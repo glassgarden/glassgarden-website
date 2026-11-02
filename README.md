@@ -12,6 +12,8 @@ The website for glassgarden: generative ambient music, grown in small sealed wor
 | `about.html` | the project, the approach, links |
 | `404.html` | shown for missing pages |
 
+Every page starts its `<head>` with the Google Analytics tag (`G-7WQ9X6GQVY`). Copy it into any new page.
+
 ## Adding or updating a release
 
 Releases live in `data/releases.js`, newest first:
@@ -84,7 +86,7 @@ Pages use root paths (`/assets/...`), so open them through a small server rather
 python -m http.server 8000
 ```
 
-then visit http://localhost:8000.
+then visit <http://localhost:8000>.
 
 ## Brand
 

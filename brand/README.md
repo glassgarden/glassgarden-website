@@ -18,7 +18,7 @@ The pixel jar belongs to both. What makes the pixel edition playful is the pixel
 
 ## Handles
 
-The plain name is taken on most platforms, so the display name stays **glassgarden** everywhere and the handle is the domain without its dot, the same on every platform: **glassgardencc**. The amber dot in the wordmark already points at the domain: glassgarden. → glassgarden.cc.
+The plain name is taken on most platforms, so the display name stays **glassgarden** everywhere and the handle is the domain without its dot, the same on every platform: **glassgardencc**. GitHub is the one exception, where the plain name was free: **glassgarden**. The amber dot in the wordmark already points at the domain: glassgarden. → glassgarden.cc.
 
 The cc stands for **control change**, the MIDI message for turning a knob on something that's already playing. It's what the music asks of me: not writing notes, just nudging a running system. Use that one meaning and don't stack others on it. It's explained once, on the About page. Elsewhere, let people find it.
 
