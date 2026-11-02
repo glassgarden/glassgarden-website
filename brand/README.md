@@ -22,27 +22,27 @@ The plain name is taken on most platforms, so the display name stays **glassgard
 
 The cc stands for **control change**, the MIDI message for turning a knob on something that's already playing. It's what the music asks of me: not writing notes, just nudging a running system. Use that one meaning and don't stack others on it. It's explained once, on the About page. Elsewhere, let people find it.
 
-| platform | address |
-| --- | --- |
-| Bandcamp | glassgardencc.bandcamp.com |
+| platform   | address                      |
+| ---------- | ---------------------------- |
+| Bandcamp   | glassgardencc.bandcamp.com   |
 | SoundCloud | soundcloud.com/glassgardencc |
-| YouTube | youtube.com/@glassgardencc |
-| Instagram | instagram.com/glassgardencc |
-| GitHub | github.com/glassgardencc |
+| YouTube    | youtube.com/@glassgardencc   |
+| Instagram  | instagram.com/glassgardencc  |
+| GitHub     | github.com/glassgarden       |
 
 - Spotify and Apple Music have no handles, only the artist name. When releasing through a distributor, ask for a **new** artist profile named `glassgarden` and check that it isn't merged into an existing "Glass Garden".
 - Every bio starts the same way: `glassgarden · generative ambient · glassgarden.cc`.
 
 ## Logos
 
-| file | use |
-| --- | --- |
-| `logos/quiet/glassgarden-lockup.svg` | jar plus name, on dark grounds. Headers, posters, video end cards. |
-| `logos/quiet/glassgarden-lockup-day.svg` | the same for light grounds |
-| `logos/quiet/glassgarden-wordmark.svg` / `-day.svg` | the name alone, outlined (no font needed) |
-| `logos/quiet/glassgarden-mark.svg` / `-day.svg` | the fine jar alone, for large sizes: posters, covers, anything over about 200px |
+| file                                                        | use                                                                                                       |
+| ----------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| `logos/quiet/glassgarden-lockup.svg`                        | jar plus name, on dark grounds. Headers, posters, video end cards.                                        |
+| `logos/quiet/glassgarden-lockup-day.svg`                    | the same for light grounds                                                                                |
+| `logos/quiet/glassgarden-wordmark.svg` / `-day.svg`         | the name alone, outlined (no font needed)                                                                 |
+| `logos/quiet/glassgarden-mark.svg` / `-day.svg`             | the fine jar alone, for large sizes: posters, covers, anything over about 200px                           |
 | `logos/quiet/glassgarden-mark-small.svg` / `-small-day.svg` | the chunky jar in quiet colors, for small sizes: avatars, favicons, app icons, anything under about 200px |
-| `logos/pixel/...` | the pixel-font edition, same set of six |
+| `logos/pixel/...`                                           | the pixel-font edition, same set of six                                                                   |
 
 - Below about 200px, use the small mark. The fine jar's one-pixel lines and dark moss disappear at avatar sizes.
 - Scale the pixel art in whole steps and keep `image-rendering: pixelated` so edges stay crisp.
@@ -51,30 +51,30 @@ The cc stands for **control change**, the MIDI message for turning a knob on som
 
 ## Social
 
-| file | size | use |
-| --- | --- | --- |
-| `social/quiet/glassgarden-avatar-512.png` | 512 × 512 | profile picture (Bandcamp, Instagram, YouTube, SoundCloud). The small mark, padded so circular crops keep the whole jar and its pollen. |
-| `social/quiet/glassgarden-banner-1920x384.png` | 1920 × 384 | header and channel art. Name and jar stay inside the middle area for side crops. |
-| `social/quiet/glassgarden-og-1200x630.png` | 1200 × 630 | link previews. The site uses a copy as `assets/img/og-image.png`. |
-| `social/quiet/glassgarden-youtube-2560x1440.png` | 2560 × 1440 | YouTube channel art. Name and jar sit inside the central 1546 × 423 that phones, desktops and TVs all show. |
-| `social/pixel/...` | same sizes | pixel-edition avatar and banner |
+| file                                             | size        | use                                                                                                                                     |
+| ------------------------------------------------ | ----------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| `social/quiet/glassgarden-avatar-512.png`        | 512 × 512   | profile picture (Bandcamp, Instagram, YouTube, SoundCloud). The small mark, padded so circular crops keep the whole jar and its pollen. |
+| `social/quiet/glassgarden-banner-1920x384.png`   | 1920 × 384  | header and channel art. Name and jar stay inside the middle area for side crops.                                                        |
+| `social/quiet/glassgarden-og-1200x630.png`       | 1200 × 630  | link previews. The site uses a copy as `assets/img/og-image.png`.                                                                       |
+| `social/quiet/glassgarden-youtube-2560x1440.png` | 2560 × 1440 | YouTube channel art. Name and jar sit inside the central 1546 × 423 that phones, desktops and TVs all show.                             |
+| `social/pixel/...`                               | same sizes  | pixel-edition avatar and banner                                                                                                         |
 
 Each PNG has an SVG twin for any size you need.
 
 ## Color
 
-| token | value | use |
-| --- | --- | --- |
-| ground | `#101211` | page and artwork background |
-| surface | `#151816` | raised panels |
-| well | `#050706` | players and code, near black |
-| rule | `#262b28` | hairlines and dividers |
-| ink | `#e3e6e1` | text and the wordmark |
-| muted | `#959d96` | secondary text |
-| faint | `#7d857f` | captions and fine print |
-| amber | `#d9a441` | the light: the wordmark dot, links, the play button, pollen |
-| honey | `#f0c96e` | hover, the brightest pollen pixel |
-| ember | `#9a6b16` | fading pollen, borders on amber marks |
+| token   | value     | use                                                         |
+| ------- | --------- | ----------------------------------------------------------- |
+| ground  | `#101211` | page and artwork background                                 |
+| surface | `#151816` | raised panels                                               |
+| well    | `#050706` | players and code, near black                                |
+| rule    | `#262b28` | hairlines and dividers                                      |
+| ink     | `#e3e6e1` | text and the wordmark                                       |
+| muted   | `#959d96` | secondary text                                              |
+| faint   | `#7d857f` | captions and fine print                                     |
+| amber   | `#d9a441` | the light: the wordmark dot, links, the play button, pollen |
+| honey   | `#f0c96e` | hover, the brightest pollen pixel                           |
+| ember   | `#9a6b16` | fading pollen, borders on amber marks                       |
 
 The jar has its own quiet palette: glass `#8d958f` / `#596059`, interior `#141715`, moss `#55704a` / `#7d9468`, soil `#2e2616`.
 
@@ -105,6 +105,7 @@ Real things, sparingly: hands and instruments, patches, the places where pieces 
   ```
 
   `--focus` moves the crop and `--zoom 0.8` tightens it. For instruments, add `--night`: the panels sink into the dark and only the LEDs and screens keep their colour. Crop in close rather than showing the whole case; a corner with lights says more than an inventory.
+
 - Keep originals outside the site folder. Phone photos carry GPS.
 - One photo per note at most. Caption in lowercase: where and when, not how it felt.
 - Pixel dithering belongs to the pixel edition (posters, gig visuals), not to photos.
