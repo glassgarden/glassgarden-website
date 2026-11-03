@@ -10,6 +10,21 @@
      write nothing here you wouldn't publish. */
 window.NOTES = [
   {
+    slug: "2026-11-outside",
+    date: "2026-11-03",
+    title: "outside",
+    tag: "patch",
+    body: [
+      "Not every piece needs the case. Sometimes it's two small synths, one coiled cable and a table outside.",
+      "With so few parts, every knob matters more.",
+    ],
+    photo: {
+      src: "/assets/img/photos/outside-patch.webp",
+      alt: "Two small synthesizers on a wooden table outdoors, joined by a coiled red cable, with trees and grass behind.",
+      caption: "a patch outside, december 2024",
+    },
+  },
+  {
     slug: "2026-11-modular",
     date: "2026-11-02",
     title: "the modular",
