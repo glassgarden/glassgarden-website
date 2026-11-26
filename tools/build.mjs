@@ -4,7 +4,7 @@
 //   content/notes/*.md     ->  data/notes.js      (window.NOTES) and feed.xml
 // Run it after editing anything in content/:  npm run build   (or: node tools/build.mjs)
 // Each file is YAML front matter between --- lines, then the text. Files starting with _ are not items.
-import { readFileSync, writeFileSync, readdirSync } from "node:fs";
+import { readFileSync, writeFileSync, readdirSync, mkdirSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import YAML from "yaml";
@@ -12,6 +12,7 @@ import { marked } from "marked";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const SITE = "https://glassgarden.cc";
+mkdirSync(join(root, "data"), { recursive: true });
 
 function parse(raw, label) {
   const m = raw.replace(/\r\n/g, "\n").match(/^---\n([\s\S]*?)\n---\n?([\s\S]*)$/);
