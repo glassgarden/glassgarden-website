@@ -18,18 +18,27 @@ window.NOTES = [
     tag: "release",
     body: [
       "On a piano, every key changes the shapes. C major and D major are different under your hand, and so is every chord that comes after them. isokey turns the grid into a keyboard where that doesn't happen.",
-      "Each key to the right is one step higher. Each row up is a fourth, five semitones, the way a bass guitar is tuned. So a major triad is the same three keys anywhere on the grid, and so is a scale run, a fifth or an octave. Learn a shape once and you can play it in any key, starting from any key.",
-      "Try it below. The brightest keys are sounding, the bright ones are the root, the dim ones are in the scale. Switch the mode to <em>in key</em> and every note outside the scale disappears: nothing you press can be wrong, which is a good place to be when you're improvising over something slow.",
+      "Each key to the right is one step higher. Each row up is a fourth, five semitones, like the way a bass guitar is tuned. So a major triad is the same three keys anywhere on the grid, and so is a scale run, a fifth or an octave. Learn a shape once and you can play it in any key, starting from any key.",
+      "Try it below. The brightest keys are the root note, the dim ones are in the scale. Switch the mode to <em>in key</em> and every note outside the scale disappears: nothing you press can be wrong, which is a good place to be when you're improvising over something slow.",
     ],
     widget: "isokey",
     after: [
-      "On the grid it plays any MIDI synth, over USB or from parterre's TRS jack. There are sixteen scales, chords built from the scale on each key, a sustain you can latch with a double tap, pitch bend, and a humanize setting that varies each note's velocity a little, because a grid can't tell how hard you press.",
-      "I wrote it on <a href=\"https://vfmod.com/parterre/\">parterre</a>, the iii firmware I run on a FREEPOET Open Grid, and tried it out playing an M-Vave FM1. It uses only the standard iii API, so it should run on monome's own grids with iii too. Some of the best ideas, like the control row on top and the double-tap sustain, come from nolliegray's <a href=\"https://github.com/nolliegray/tropiii\">tropiii</a>.",
+      "On the grid it plays any MIDI synth, over USB or from parterre's TRS MIDI Out jack. There are sixteen scales, chords built from the scale on each key, a sustain you can latch with a double tap, pitch bend, and a humanize setting that varies each note's velocity a little, because a grid can't tell how hard you press.",
+      'I wrote it on <a href="https://vfmod.com/parterre/">parterre</a>, the iii firmware running on a FREEPOET Open Grid, and tried it out playing an M-Vave FM1. It uses only the standard iii API, so it should run on monome\'s own grids with iii too.',
     ],
     links: [
-      { label: "get isokey", url: "https://github.com/glassgarden/iii-scripts/tree/main/isokey" },
-      { label: "the manual", url: "https://github.com/glassgarden/iii-scripts/blob/main/isokey/Readme.md" },
-      { label: "upload it with greenhouse", url: "https://greenhouse.vfmod.com/" },
+      {
+        label: "get isokey",
+        url: "https://github.com/glassgarden/iii-scripts/tree/main/isokey",
+      },
+      {
+        label: "the manual",
+        url: "https://github.com/glassgarden/iii-scripts/blob/main/isokey/Readme.md",
+      },
+      {
+        label: "upload it with greenhouse",
+        url: "https://greenhouse.vfmod.com/",
+      },
     ],
   },
   {
@@ -38,15 +47,21 @@ window.NOTES = [
     title: "what the wind carries",
     tag: "growing",
     body: [
-      "Pollen grains and radio waves travel the same way. Both cross the planet through the sky and land far from where they started. pollen, the next norns script, is built on that.",
-      "It tunes into live radio stations around the world, thousands of them, from radio-browser.info. A wind carries you from one to the next. It can stay close, a city or two away, or cross an ocean. A breeze hops off in any direction, a trade wind keeps one heading, a gust goes anywhere at all.",
+      "Pollen grains and radio waves travel the same way. Both cross the planet through the sky and land far from where they started. pollen, the next norns script, is built on that concept.",
+      "It tunes into live radio stations around the world, choosing from thousands of them, from radio-browser.info. A wind carries you from one to the next. It can stay close, a city or two away, or cross an ocean. A breeze hops off in any direction, a trade wind keeps one heading, a gust goes anywhere at all.",
       "Whatever station you land on gets caught on a reel, a loop of tape the radio keeps recording onto, and the reel is scattered back out as grains. Close to the recording head you hear the station almost live. Further back, the grains reach into what was caught seconds ago, and the voice of a news reader somewhere becomes a slow, warm cloud.",
       "Every part has two macros, a gesture and a variety, so you play it with your hands and not with menus: hold the haze, send a burst of grains, drift to the next station when the one you're on runs out of interest.",
-      "It is version 0.2. The radio plays, the wind moves and the reel scatters, and you can try all of it <a href=\"https://pollen.glassgarden.cc/\">in your browser</a>, which runs the real script. It hasn't run on a norns yet; that is next, then a view of the globe and a vault for keeping the seeds you like. Its progress is in the <a href=\"/garden.html#growing\">garden</a>.",
+      'Built for Norns, you can also try all of it <a href="https://pollen.glassgarden.cc/">in your browser</a>, which runs the real script.',
     ],
     links: [
-      { label: "play pollen in the browser", url: "https://pollen.glassgarden.cc/" },
-      { label: "the manual", url: "https://github.com/glassgarden/pollen/blob/main/doc/MANUAL.md" },
+      {
+        label: "play pollen in the browser",
+        url: "https://pollen.glassgarden.cc/",
+      },
+      {
+        label: "the manual",
+        url: "https://github.com/glassgarden/pollen/blob/main/doc/MANUAL.md",
+      },
       { label: "view code", url: "https://github.com/glassgarden/pollen" },
     ],
   },
