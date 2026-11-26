@@ -1,9 +1,18 @@
 ---
-order: 4
+order: 2
 title: achene
 stage: growing
+release: true
+year: "2026"
 kind: MIDI controller
 home: vfm
+tags:
+  - midi
+  - controller
+image:
+  src: /assets/img/photos/achene.png
+  alt: achene interface
+  caption: achene interface
 links:
   - label: vfmod.com/achene
     url: https://vfmod.com/achene/

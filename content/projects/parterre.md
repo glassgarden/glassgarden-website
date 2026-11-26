@@ -3,6 +3,8 @@ order: 3
 title: parterre
 stage: bloom
 kind: grid firmware
+release: true
+year: "2026"
 home: vfm
 links:
   - label: vfmod.com/parterre

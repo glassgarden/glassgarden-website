@@ -253,6 +253,22 @@ main {
   height: 144px;
   display: block;
 }
+.release-art.mini {
+  width: 28px;
+  height: 36px;
+  align-self: center;
+}
+.release-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-sm);
+}
+.release.has-image {
+  grid-template-columns: 260px minmax(0, 1fr);
+}
 .release-body {
   display: grid;
   gap: 12px;
@@ -358,6 +374,9 @@ main {
 .release-tile .release-art {
   width: 84px;
   height: 108px;
+  margin-bottom: var(--space-1);
+}
+.release-tile .release-image {
   margin-bottom: var(--space-1);
 }
 .release-tile h3 {
@@ -752,6 +771,9 @@ main {
 }
 
 @media (max-width: 720px) {
+  .release.has-image {
+    grid-template-columns: 200px minmax(0, 1fr);
+  }
   .release-tiles {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -806,7 +828,8 @@ main {
   .isogrid {
     gap: 2px;
   }
-  .release {
+  .release,
+  .release.has-image {
     grid-template-columns: 1fr;
     gap: var(--space-2);
   }

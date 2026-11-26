@@ -1,8 +1,9 @@
 ---
-order: 1
-slug: isokey
+order: 8
 title: isokey
-status: out
+stage: bloom
+release: true
+releaseOrder: 1
 year: "2026"
 kind: iii script for 16×8 grids
 tags:
@@ -18,7 +19,9 @@ links:
     url: https://github.com/glassgarden/iii-scripts/blob/main/isokey/Readme.md
 license: GPL-3.0
 credits: Some ideas come from <a href="https://github.com/nolliegray/tropiii">tropiii</a> by nolliegray. Runs on <a href="https://monome.org/docs/iii/">monome iii</a>.
-audio: null
+image:
+  src: /assets/img/photos/isokey.png
+  alt: isokey grid layout
 seed: 5040
 ---
 

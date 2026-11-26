@@ -1,10 +1,15 @@
 ---
-order: 3
-slug: greenhouse
+order: 10
 title: greenhouse
-status: out
+stage: bloom
+release: true
+releaseOrder: 3
 year: "2026"
 kind: a browser workbench for monome iii devices
+image:
+  src: /assets/img/photos/greenhouse.png
+  alt: greenhouse interface
+  caption: greenhouse interface
 tags:
   - iii
   - browser
@@ -14,7 +19,6 @@ links:
   - label: view code
     url: https://github.com/VoltageFoundryMod/greenhouse
 credits: Grown from monome's <a href="https://github.com/monome/web-diii">diii</a>.
-audio: null
 seed: 1651
 ---
 

@@ -25,11 +25,7 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build
-      # Publish only what the site needs: not content/ (drafts), node_modules, brand/ or tools/.
-      - name: Stage the site
-        run: |
-          mkdir _site
-          cp -r *.html assets data audio feed.xml CNAME .nojekyll _site/
+      # _site/ holds only what the site needs: not content/ (drafts), node_modules, brand/ or tools/.
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

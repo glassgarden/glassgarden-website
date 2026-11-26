@@ -14,9 +14,10 @@
     return e;
   }
 
-  function art(seed) {
-    var c = el("canvas", "release-art");
-    var COLS = 28, ROWS = 36, scale = 8;
+  // the jar: large when a release has no image, a small mark in the header when it has one
+  function art(seed, small) {
+    var c = el("canvas", "release-art" + (small ? " mini" : ""));
+    var COLS = 28, ROWS = 36, scale = small ? 2 : 8;
     c.width = COLS * scale; c.height = ROWS * scale;
     c.setAttribute("aria-hidden", "true");
     var ctx = c.getContext("2d");
@@ -24,6 +25,14 @@
     var j = GG.jar({ w: 24, h: 31, neck: 12, seed: seed, plants: 3, glow: R.int(2, 4), radius: 4, lid: 2 });
     GG.draw(ctx, j.grid, 2, 3, scale, GG.QUIET);
     return c;
+  }
+
+  function picture(item) {
+    var img = el("img", "release-image");
+    img.src = item.image.src;
+    img.alt = item.image.alt || "";
+    img.loading = "lazy";
+    return img;
   }
 
   function player(item) {
@@ -59,9 +68,11 @@
   function card(item) {
     var a = el("article", "release" + (item.status === "growing" ? " is-growing" : ""));
     a.id = item.slug;
-    a.appendChild(art(item.seed));
+    if (item.image) { a.classList.add("has-image"); a.appendChild(picture(item)); }
+    else a.appendChild(art(item.seed));
     var body = el("div", "release-body");
     var head = el("div", "release-head");
+    if (item.image) head.appendChild(art(item.seed, true));
     head.appendChild(el("h3", null, item.title));
     head.appendChild(el("span", "status" + (item.status === "growing" ? " growing" : ""), item.status === "growing" ? "growing" : "out now"));
     body.appendChild(head);
@@ -107,8 +118,10 @@
 
   function tile(item) {
     var a = el("article", "release-tile" + (item.status === "growing" ? " is-growing" : ""));
-    a.appendChild(art(item.seed));
+    if (item.image) { a.classList.add("has-image"); a.appendChild(picture(item)); }
+    else a.appendChild(art(item.seed));
     var head = el("div", "release-head");
+    if (item.image) head.appendChild(art(item.seed, true));
     var h = el("h3"), t = el("a", null, item.title);
     t.href = "/releases.html#" + item.slug;
     h.appendChild(t);

@@ -3,7 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "node tools/build.mjs"
+    "build": "node tools/build.mjs",
+    "dev": "node tools/dev.mjs"
   },
   "devDependencies": {
     "marked": "^15.0.0",

@@ -1,8 +1,9 @@
 ---
-order: 4
-slug: pollen
+order: 1
 title: pollen
-status: growing
+stage: growing
+release: true
+releaseOrder: 4
 year: "2026"
 kind: norns script · plays in the browser · version 0.2
 tags:
@@ -20,8 +21,25 @@ credits: Stations from <a href="https://www.radio-browser.info">radio-browser.in
 changes:
   - date: 2026-11
     text: "0.2: the radio plays, the wind moves between stations, and the reel scatters them as grains."
-audio: null
+image:
+  src: /assets/img/photos/pollen.png
+  alt: pollen interface
 seed: 3141
+checklist:
+  - text: stations from around the world
+    done: true
+  - text: the wind between them
+    done: true
+  - text: the reel, scattered as grains
+    done: true
+  - text: plays in the browser
+    done: true
+  - text: first run on a norns
+    done: true
+  - text: the globe view
+    done: false
+  - text: the seed vault
+    done: false
 ---
 
 Live radio from around the globe, caught on a reel and scattered back out as grains. The wind carries you from one station to the next. The radio already plays in the browser; it hasn't run on a norns yet.

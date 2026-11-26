@@ -5,7 +5,5 @@ images/
 *.heic
 node_modules/
 
-# built by tools/build.mjs (npm run build); the Pages workflow regenerates them
-data/*.js
-feed.xml
+# the built site (tools/build.mjs); the Pages workflow regenerates it
 _site/
