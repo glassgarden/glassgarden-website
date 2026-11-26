@@ -41,6 +41,12 @@
     (n.body || []).forEach(function (html) {
       var p = el("p"); p.innerHTML = html; body.appendChild(p);
     });
+    if (n.widget) {
+      var w = el("div"); w.setAttribute("data-widget", n.widget); body.appendChild(w);
+    }
+    (n.after || []).forEach(function (html) {
+      var p = el("p"); p.innerHTML = html; body.appendChild(p);
+    });
     if (n.links && n.links.length) {
       var acts = el("div", "note-links");
       n.links.forEach(function (l, i) {

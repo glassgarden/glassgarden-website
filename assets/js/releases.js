@@ -1,5 +1,6 @@
 /* Renders window.RELEASES into any element with [data-releases].
-   data-limit="1" shows only the newest few; data-status="out" filters by status. */
+   data-limit="1" shows only the newest few; data-status="out" filters by status.
+   credits are trusted HTML from data/releases.js. */
 (function () {
   "use strict";
   var GG = window.Glassgarden, list = window.RELEASES || [];
@@ -63,8 +64,17 @@
     head.appendChild(el("h3", null, item.title));
     head.appendChild(el("span", "status" + (item.status === "growing" ? " growing" : ""), item.status === "growing" ? "growing" : "out now"));
     body.appendChild(head);
-    body.appendChild(el("p", "meta", [item.year, item.kind, item.seed && "seed " + item.seed].filter(Boolean).join(" · ")));
+    body.appendChild(el("p", "meta", [item.year, item.kind, item.license && item.license.replace(/-/g, "‑"), item.seed && "seed " + item.seed].filter(Boolean).join(" · ")));
+    if (item.tags && item.tags.length) {
+      var tags = el("ul", "tags");
+      tags.setAttribute("aria-label", "runs on");
+      item.tags.forEach(function (t) { tags.appendChild(el("li", null, t)); });
+      body.appendChild(tags);
+    }
     body.appendChild(el("p", null, item.summary));
+    if (item.credits) {
+      var cr = el("p", "credits"); cr.innerHTML = item.credits; body.appendChild(cr);
+    }
     if (item.audio) body.appendChild(player(item));
     if (item.links && item.links.length) {
       var acts = el("div", "release-actions");
@@ -76,6 +86,19 @@
         acts.appendChild(link);
       });
       body.appendChild(acts);
+    }
+    if (item.changes && item.changes.length) {
+      var det = el("details", "changes");
+      det.appendChild(el("summary", null, "what changed"));
+      var ul = el("ul");
+      item.changes.forEach(function (c) {
+        var li = el("li");
+        li.appendChild(el("span", "meta", c.date));
+        li.appendChild(document.createTextNode(" " + c.text));
+        ul.appendChild(li);
+      });
+      det.appendChild(ul);
+      body.appendChild(det);
     }
     a.appendChild(body);
     return a;
