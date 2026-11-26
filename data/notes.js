@@ -21,6 +21,11 @@ window.NOTES = [
       "Each key to the right is one step higher. Each row up is a fourth, five semitones, like the way a bass guitar is tuned. So a major triad is the same three keys anywhere on the grid, and so is a scale run, a fifth or an octave. Learn a shape once and you can play it in any key, starting from any key.",
       "Try it below. The brightest keys are the root note, the dim ones are in the scale. Switch the mode to <em>in key</em> and every note outside the scale disappears: nothing you press can be wrong, which is a good place to be when you're improvising over something slow.",
     ],
+    photo: {
+      src: "/assets/img/photos/isokey.png",
+      alt: "isokey grid layout",
+      caption: "isokey grid layout",
+    },
     widget: "isokey",
     after: [
       "On the grid it plays any MIDI synth, over USB or from parterre's TRS MIDI Out jack. There are sixteen scales, chords built from the scale on each key, a sustain you can latch with a double tap, pitch bend, and a humanize setting that varies each note's velocity a little, because a grid can't tell how hard you press.",
@@ -53,6 +58,11 @@ window.NOTES = [
       "Every part has two macros, a gesture and a variety, so you play it with your hands and not with menus: hold the haze, send a burst of grains, drift to the next station when the one you're on runs out of interest.",
       'Built for Norns, you can also try all of it <a href="https://pollen.glassgarden.cc/">in your browser</a>, which runs the real script.',
     ],
+    photo: {
+      src: "/assets/img/photos/pollen.png",
+      alt: "pollen interface",
+      caption: "pollen interface",
+    },
     links: [
       {
         label: "play pollen in the browser",
