@@ -29,6 +29,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400&family=IBM+Plex+Sans:wght@300;400&display=swap">
+<link rel="alternate" type="application/rss+xml" title="glassgarden notes" href="/feed.xml">
 <link rel="stylesheet" href="/assets/css/site.css">
 </head>
 <body>
@@ -36,6 +37,7 @@
   <a class="brand" href="/">glassgarden<span class="dot">.</span></a>
   <nav class="nav" aria-label="Main">
     <a href="/releases.html">releases</a>
+    <a href="/garden.html">garden</a>
     <a href="/notes.html" aria-current="page">notes</a>
     <a href="/about.html">about</a>
   </nav>
@@ -44,6 +46,7 @@
   <section class="section intro">
     <h1>notes</h1>
     <p class="lede">A field journal: what got planted, what grew, what didn't.</p>
+    <p class="meta"><a href="/feed.xml">follow by rss</a></p>
   </section>
   <!-- Notes live in data/notes.js. -->
   <section class="notes" data-notes></section>
@@ -54,5 +57,6 @@
 </footer>
 <script src="/data/notes.js"></script>
 <script src="/assets/js/notes.js"></script>
+<script src="/assets/js/isokey-grid.js"></script>
 </body>
 </html>

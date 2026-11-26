@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7WQ9X6GQVY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'G-7WQ9X6GQVY');
+</script>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>garden · glassgarden</title>
+<meta name="description" content="What's growing at glassgarden: every script, instrument and piece in the works, from first seed to bloom.">
+<meta name="theme-color" content="#101211">
+<link rel="canonical" href="https://glassgarden.cc/garden.html">
+<link rel="icon" href="/assets/img/glassgarden-mark.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="garden · glassgarden">
+<meta property="og:description" content="What's growing at glassgarden: every script, instrument and piece in the works, from first seed to bloom.">
+<meta property="og:url" content="https://glassgarden.cc/garden.html">
+<meta property="og:image" content="https://glassgarden.cc/assets/img/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400&family=IBM+Plex+Sans:wght@300;400&display=swap">
+<link rel="alternate" type="application/rss+xml" title="glassgarden notes" href="/feed.xml">
+<link rel="stylesheet" href="/assets/css/site.css">
+</head>
+<body>
+<header class="wrap site-head">
+  <a class="brand" href="/">glassgarden<span class="dot">.</span></a>
+  <nav class="nav" aria-label="Main">
+    <a href="/releases.html">releases</a>
+    <a href="/garden.html" aria-current="page">garden</a>
+    <a href="/notes.html">notes</a>
+    <a href="/about.html">about</a>
+  </nav>
+</header>
+<main class="wrap">
+  <section class="section intro">
+    <h1>garden</h1>
+    <p class="lede">What's growing here, from first seed to bloom.</p>
+    <p class="muted">Scripts, instruments and pieces in the works, and how far along each one is.</p>
+    <p class="meta" data-tended></p>
+  </section>
+  <section class="section">
+    <ul class="stages" data-stages aria-label="Stages"></ul>
+  </section>
+  <!-- Items live in data/garden.js. -->
+  <div class="beds" data-beds></div>
+</main>
+<footer class="wrap site-foot">
+  <span>glassgarden · generative ambient, grown in small sealed worlds</span>
+  <span>© 2026</span>
+</footer>
+<script src="/assets/js/jar.js"></script>
+<script src="/data/garden.js"></script>
+<script src="/assets/js/garden.js"></script>
+</body>
+</html>
