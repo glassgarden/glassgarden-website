@@ -6,7 +6,7 @@ The website for glassgarden: generative ambient music, grown in small sealed wor
 
 | file | what |
 | --- | --- |
-| `index.html` | home: the name, one sentence, a pixel jar that grows from a new seed on every visit, the latest release and the newest notes |
+| `index.html` | home: the name, one sentence, a pixel jar that grows from a new seed on every visit, the four newest releases as small tiles (out or growing) and the newest notes |
 | `releases.html` | everything out now, plus what's still growing |
 | `garden.html` | what's growing: every script, instrument and piece in the works, by stage, rendered from `data/garden.js` |
 | `notes.html` | the field journal, rendered from `data/notes.js` |
