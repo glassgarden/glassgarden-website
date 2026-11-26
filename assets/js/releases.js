@@ -1,5 +1,6 @@
 /* Renders window.RELEASES into any element with [data-releases].
-   data-limit="1" shows only the newest few; data-status="out" filters by status.
+   data-limit="1" shows only the newest few; data-status="out" filters by status;
+   data-compact shows small tiles (jar, title, what it is, the main link) that link to the full cards.
    credits are trusted HTML from data/releases.js. */
 (function () {
   "use strict";
@@ -104,11 +105,36 @@
     return a;
   }
 
+  function tile(item) {
+    var a = el("article", "release-tile" + (item.status === "growing" ? " is-growing" : ""));
+    a.appendChild(art(item.seed));
+    var head = el("div", "release-head");
+    var h = el("h3"), t = el("a", null, item.title);
+    t.href = "/releases.html#" + item.slug;
+    h.appendChild(t);
+    head.appendChild(h);
+    head.appendChild(el("span", "status" + (item.status === "growing" ? " growing" : ""), item.status === "growing" ? "growing" : "out now"));
+    a.appendChild(head);
+    a.appendChild(el("p", "meta", item.kind));
+    var main = item.links && item.links[0];
+    if (main) {
+      var external = new URL(main.url, location.href).host !== location.host;
+      var acts = el("div", "release-actions");
+      var link = el("a", "primary", main.label + (external ? " ↗" : ""));
+      link.href = main.url;
+      if (external) link.rel = "noopener";
+      acts.appendChild(link);
+      a.appendChild(acts);
+    }
+    return a;
+  }
+
   document.querySelectorAll("[data-releases]").forEach(function (host) {
     var status = host.getAttribute("data-status");
     var items = list.filter(function (r) { return !status || r.status === status; });
     var limit = parseInt(host.getAttribute("data-limit"), 10) || items.length;
-    items.slice(0, limit).forEach(function (item) { host.appendChild(card(item)); });
+    var compact = host.hasAttribute("data-compact");
+    items.slice(0, limit).forEach(function (item) { host.appendChild(compact ? tile(item) : card(item)); });
     if (!items.length) host.appendChild(el("p", "muted", "Nothing here yet."));
   });
 
