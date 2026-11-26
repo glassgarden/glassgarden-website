@@ -3,3 +3,9 @@ images/
 *.jpg
 *.jpeg
 *.heic
+node_modules/
+
+# built by tools/build.mjs (npm run build); the Pages workflow regenerates them
+data/*.js
+feed.xml
+_site/
